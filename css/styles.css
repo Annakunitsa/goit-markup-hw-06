@@ -708,6 +708,11 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+
+  color: var(--button-color);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
 }
 
 .subscribe-input::placeholder {
@@ -738,6 +743,13 @@ body {
   border: none;
   position: relative;
   align-items: center;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  text-align: center;
+  letter-spacing: 0.06em;
 }
 
 .subscribe-icon {
@@ -855,6 +867,12 @@ body {
   cursor: pointer;
 }
 
+.button-modal:hover {
+  cursor: pointer;
+  fill: var(--accent-color);
+  border-radius: 50%;
+}
+
 .modal-title {
   font-weight: 700;
   font-size: 20px;
@@ -871,6 +889,12 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   background-color: transparent;
+
+  margin-top: 4px;
+  padding-left: 35px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: transparent;
 }
 
 .input-area {
@@ -905,14 +929,6 @@ body {
   line-height: calc (14/12);
   letter-spacing: 0.01em;
   color: #757575;
-}
-
-.modal-input {
-  margin-top: 4px;
-  padding-left: 12px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: transparent;
 }
 
 .modal-input:focus {
@@ -967,7 +983,6 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  transform: translateX(45px);
 }
 
 .check-text::before {
@@ -976,19 +991,13 @@ body {
   height: 22px;
   border-radius: 50px;
   border: 1px solid var(--secondary-text-color);
-  position: absolute;
-
-  margin-right: 7px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  transform: translateX(-45px);
 }
 
 .check-text::after {
   content: '';
   width: 18px;
   height: 18px;
-  margin-right: 7px;
 
   border-radius: 50%;
   left: 3px;
@@ -996,8 +1005,7 @@ body {
   border: 1px solid var(--secondary-text-color);
   background-color: var(--secondary-text-color);
   position: absolute;
-
-  transform: translateX(-45px);
+  margin-right: 10px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms;
 }
